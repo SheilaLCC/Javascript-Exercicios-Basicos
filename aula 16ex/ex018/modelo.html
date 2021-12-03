@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Numeros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body><!--Interface do site  -->
+    <header>
+        <h1> Analisador de Numeros </h1><!-- -->
+    </header>
+    <section>
+        <div>
+            Numero (entre 1 e 100):<!--Vamos pedir um numero entre 1 e 100 e vamos validar -->
+            <input type="number" name="fnum" id="fnum"><!--vamos usar o id no js -->
+            <input type="button" value="Adicionar" onclick="adicionar ()"><!--vai adicionar numa lista que vamos colocar num select aqui embaixo, quando eu clicar no adicionar chama a função basica -->
+            <br><br><select name="flista" id="flista" size="6"></select><!-- para ficar mais largo eu tenho que ir no css e acrescentar da seguinte maneira select#flista (ver no css)-->
+            <br><input type="button" value="Finalizar" onclick="finalizar()"><!--vai mostrar os dados embaixo -->
+
+        </div>
+        <div id="res"><!--é o resultado -->
+            
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
